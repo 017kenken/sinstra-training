@@ -1,0 +1,14 @@
+
+  <div class="contens-tlist">
+  <a href="/main" class="badge badge-primary">top</a>
+    <a href="/newp" class="badge badge-primary">投稿</a>
+  </div>
+  <div>
+      <% @posts.each do|post| %>
+  <div data-id="<%= post.id%>">
+  <ul class="titlelists list-group" style="max-width:;">
+    <li class="titlelist list-group-item"><a href="/show/<%= post.id%>"><%= post.title %></a></li>
+  </ul>
+  </div>
+    <%end%>
+  </div>

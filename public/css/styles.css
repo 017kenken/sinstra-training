@@ -1,0 +1,52 @@
+body {
+    background-color: blue;
+}
+
+.delete {
+    font-size: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.header-logo {
+    font-family: serif;
+}
+
+
+.container-fluid{
+    text-align: center;
+}
+
+.diary {
+    border: inset 10px blue;
+    margin-top: 5px;
+}
+
+.header-logo {
+    font-size: 20px;
+    color: white;
+}
+
+.titlelists {
+    text-align: center;
+}
+
+.titlelist {
+    margin: 5px;
+}
+
+.contens {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+hr {
+    margin-top: 0px;
+}

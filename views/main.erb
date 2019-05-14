@@ -1,0 +1,15 @@
+
+  <a href="/tlist" class="badge badge-primary">一覧</a>
+  <a href="/newp" class="badge badge-primary">投稿</a>
+    <% @posts.each do |post| %>
+      <div data-id="<%= post.id %>">
+            <div class="diary">
+            <p>
+            <%= Rack::Utils.escape_html(post.title) %>
+            </p>
+            <hr>
+            <pre><%= Rack::Utils.escape_html(post.body) %></pre>
+            </div>
+          <span class="delete badge badge-pill badge-primary">削除</span>
+      </div>
+    <% end %>

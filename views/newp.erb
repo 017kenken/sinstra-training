@@ -1,0 +1,10 @@
+
+    <a href="/main" class="badge badge-primary">top</a>
+    <a href="/tlist" class="badge badge-primary">一覧</a>
+    
+    <form action="/create" method="post">
+        <%#<%= Rack::Csrf.csrf_tag(env) %>
+        <input class="form-control" type="text" name="title"></br>
+        <textarea class="form-control" name="body"></textarea></br>
+        <input type="submit" class="btn btn-primary" value="投稿">
+    </form>
