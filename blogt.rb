@@ -52,3 +52,14 @@ post "/destroy" do
     Post.find(params[:id]).destroy
 end
 
+get '/edit/:id' do 
+    @title = "my blog"
+    @post = Post.find(params[:id])
+    erb :edit
+end
+
+post "/update/:id" do
+    @post = Post.find(params[:id])
+    @post.update!(:title => params[:title], :body => params[:body])
+    redirect '/main'
+end

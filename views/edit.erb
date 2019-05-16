@@ -1,0 +1,6 @@
+<form action="/update/<%= @post.id %>" method="post">
+        <%#<%= Rack::Csrf.csrf_tag(env) %>
+        <input class="form-control" type="text" name="title" value="<%= @post.title %>"></br>
+        <textarea class="form-control" name="body"><%= @post.body %></textarea></br>
+        <input type="submit" class="btn btn-primary" value="投稿">
+    </form>

@@ -1,5 +1,6 @@
 body {
     background-color: blue;
+    margin: 10px;
 }
 
 .delete {
@@ -19,7 +20,7 @@ body {
 
 .diary {
     border: inset 10px blue;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .header-logo {
@@ -33,6 +34,10 @@ body {
 
 .titlelist {
     margin: 5px;
+}
+
+.list{
+    margin-top: 5px;
 }
 
 .contens {
